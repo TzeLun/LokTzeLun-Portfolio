@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Assistant"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Abel"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <title>Portfolio - Lok Tze Lun</title>
+    </head>
+    <body>
+        <header id="header">
+            <img id="logo" src="/home/mylogo.PNG" />
+            <nav id="nav-bar">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/docs/education.html" class="nav-link">Education</a>
+                <a href="/docs/project.html" class="nav-link">Projects</a>
+                <a href="/docs/work.html" class="nav-link">Work</a>
+                <div class="dropdown">
+                    <button id="menu-btn" class="menu-btn" onclick="dropdown()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="/index.html" class="drop-link">Home</a>
+                        <a href="/docs/education.html" class="drop-link">Education</a>
+                        <a href="/docs/project.html" class="drop-link">Projects</a>
+                        <a href="/docs/work.html" class="drop-link">Work</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="content">
+            <div class="profile">
+                <div class="pic">
+                    <div>
+                        Tze Lun, Lok
+                    </div>
+                    <img id="avatar" src="/home/avatar.jpg" />
+                </div>
+                <div class="contact">
+                    <div>
+                        <img src="/home/linkedin.png" />
+                        <div><a href="https://www.linkedin.com/in/tzelunlok" class="contact-link">Linkedin</a></div>
+                    </div>
+                    <div>
+                        <img src="/home/github.png" />
+                        <div><a href="https://github.com/TzeLun" class="contact-link">GitHub</a></div>
+                    </div>
+                    <div>
+                        <img src="/home/email.png" />
+                        <div>loktzelun@gmail.com</div>
+                    </div>
+                    <div>
+                        <img src="/home/phone.png" />
+                        <div>+6012-653-1955</div>
+                    </div>
+                    <div>
+                        <i class="material-icons">my_location</i>
+                        <div>Malaysia</div>
+                    </div>
+                </div>
+                <div class="language">
+                    <h1>Languages</h1>
+                    <ul>
+                        <li>English (Native)</li>
+                        <li>Mandarin</li>
+                        <li>Malay</li>
+                        <li>Japanese (N2)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about">
+                <h1>ABOUT ME</h1>
+                <P>
+                    Welcome! The name is Tze Lun. Formerly a mechatronic engineering student at the
+                    University of Nottingham Malaysia. Throughout his bachelor's degree, he attained
+                    a wealth of practical and theoretical knowledge on robotics, industrial automation,
+                    electronics, CAD design, and control system. Despite that, his interest in software
+                    and algorithms deepened, which became the impetus to matriculate at the University of
+                    Tokyo for his master's in Japan. Being a scholar in a surgical robotics lab, he
+                    successfully devised a surgical bone drilling VR simulator, with the core of his research
+                    involving the integration of a realistic real time drilling audio generator based on
+                    deep learning. <br><br>
+                    Besides the tech-geeky persona, Tze Lun enjoys extracurricular activities. He used to be
+                    the event planner for IEEE Student Chapter at his alma mater. He participated in two business
+                    pitching events with a group of friends, working hand-in-hand to devise a business masterplan to
+                    present to a panel of experienced entrepreneurs. He also held many leadership titles during his
+                    high school years. Currently, his hobbies are cooking, fitness, and practising the electronic
+                    piano. Though he manages to interpret the music sheet, he is very much still an amateur
+                    on the piano. (sigh) <br><br>
+                    Anyway, feel free to browse and check out whatever that is in store here! <br><br> 
+                </P>
+            </div>
+        </div>
+
+        <footer>&copy 2023 Lok Tze Lun - Portfolio All Rights Reserved.</footer>
+
+        <script>
+        function dropdown() {
+            var drop_content = document.getElementById("dropdown-content");
+            var btn = document.getElementById("menu-btn");
+            btn.classList.toggle("btn-select");
+            if (drop_content.classList.contains("show")) {
+            drop_content.classList.remove("show");
+            } else {
+            drop_content.classList.add("show");
+            }
+        }
+        </script>
+    </body>
+</html>

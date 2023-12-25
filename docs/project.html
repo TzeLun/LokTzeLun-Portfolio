@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="project.css" />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Assistant"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Abel"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <title>Portfolio - Lok Tze Lun</title>
+    </head>
+    <body>
+        <header id="header">
+            <img id="logo" src="/home/mylogo.PNG" />
+            <nav id="nav-bar">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/docs/education.html" class="nav-link">Education</a>
+                <a href="/docs/project.html" class="nav-link">Projects</a>
+                <a href="/docs/work.html" class="nav-link">Work</a>
+                <div class="dropdown">
+                    <button id="menu-btn" class="menu-btn" onclick="dropdown()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="/index.html" class="drop-link">Home</a>
+                        <a href="/docs/education.html" class="drop-link">Education</a>
+                        <a href="/docs/project.html" class="drop-link">Projects</a>
+                        <a href="/docs/work.html" class="drop-link">Work</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="title">
+            Projects
+          </h1>
+        
+        <div class="selection">
+            <div class="bg1"><a href="/project/creative_informatics.html">Creative Informatics</a></div>
+            <div class="bg2"><a href="/project/deep_learning.html">AI / Deep Learning</a></div>
+            <div class="bg3"><a href="/project/data_science.html">Data Science</a></div>
+            <div class="bg4"><a href="/project/mechatronics.html">Mechatronics</a></div>
+            <div class="bg5"><a href="/project/algorithms.html">Algorithms</a></div>
+            <div class="bg6"><a href="/project/web_design.html">Web Development</a></div>
+            <div class="bg7"><a href="/project/analytical_study.html">Analytical Study</a></div>
+        </div>
+        
+        <footer>&copy 2023 Lok Tze Lun - Portfolio All Rights Reserved.</footer>
+
+        <script>
+        function dropdown() {
+            var drop_content = document.getElementById("dropdown-content");
+            var btn = document.getElementById("menu-btn");
+            btn.classList.toggle("btn-select");
+            if (drop_content.classList.contains("show")) {
+            drop_content.classList.remove("show");
+            } else {
+            drop_content.classList.add("show");
+            }
+        }
+        </script>
+    </body>
+</html>

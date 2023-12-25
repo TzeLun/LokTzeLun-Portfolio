@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="project_style.css" />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Assistant"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Abel"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <title>Portfolio - Lok Tze Lun</title>
+    </head>
+    <body>
+        <header id="header">
+            <img id="logo" src="/home/mylogo.PNG" />
+            <nav id="nav-bar">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/docs/education.html" class="nav-link">Education</a>
+                <a href="/docs/project.html" class="nav-link">Projects</a>
+                <a href="/docs/work.html" class="nav-link">Work</a>
+                <div class="dropdown">
+                    <button id="menu-btn" class="menu-btn" onclick="dropdown()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="/index.html" class="drop-link">Home</a>
+                        <a href="/docs/education.html" class="drop-link">Education</a>
+                        <a href="/docs/project.html" class="drop-link">Projects</a>
+                        <a href="/docs/work.html" class="drop-link">Work</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="back">
+            <a href="/docs/project.html">
+                <i class="material-icons">arrow_back</i> Projects
+            </a>
+        </div>
+
+        <div class="container">
+            <h1 id="title">
+                Creative Informatics
+            </h1>
+    
+            <div id="table-of-contents">
+                <h2>Contents:</h2>
+                <ol>
+                    <li>
+                        <div onclick="bookmark('p2')">
+                            A Surgical Bone Drilling Virtual Reality Simulator with
+                            Realistic Real-time Drilling Audio Generator
+                        </div>
+                    </li>
+                    <li>
+                        <div onclick="bookmark('p1')">
+                            Cube Collision Application: A PhysX Demonstration
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="contents">
+                <div class="items">
+                    <h1 id="p2">
+                        A Surgical Bone Drilling Virtual Reality Simulator with
+                        Realistic Real-time Drilling Audio Generator
+                    </h1>
+                    <p>
+                        A bone drilling simulator designed to supersede the use of live specimens in animal experiments
+                        as a source for synthetic training data generation and a test bed for robotic control algorithms.
+                    </p>
+            
+                    <div class="keywords">
+                      <div>VR Simulator</div>
+                      <div>Computer graphics</div>
+                      <div>Deep learning</div>
+                      <div>Robot Operating System (ROS)</div>
+                      <div>PyTorch</div>
+                      <div>Python</div>
+                      <div>C++</div>
+                      <div>OpenGL</div>
+                      <div>Haptic interface</div>
+                      <div>Audio Generation</div>
+                    </div>
+
+                    <p>
+                        <strong>Summary of research work:</strong>
+                    </p>
+                    <div class="gallery">
+                        <img id="lg_img" src="/project/assets/ci/cip2_3.png">
+                    </div>
+                    <p>
+                        <strong>Demonstration and setup:</strong>
+                    </p>                    
+                    <div class="gallery">
+                        <img src="/project/assets/ci/cip2_1.png">
+                        <img src="/project/assets/ci/cip2_2.jpg">
+                        <div class="video-wrapper">
+                            <iframe
+                                id="video" width="640" height="480"
+                                src="https://drive.google.com/file/d/1JASs8JYhpFfPqzhfwSknc-nsO2aBYr0p/preview"
+                                allow="fullscreen"> ****Your Browser Doesn't Support iframe!****
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <ul>
+                      <li>
+                        Developed the VR simulator in C++ through CHAI3D and AMBF. Graphics are rendered
+                        using texture-based volume ray-casting with OpenGL and shader programming. Drilling models are prepared
+                        as volumetric data from CT DICOM data and stl files via 3D Slicer.
+                      </li><br>
+                      <li>
+                        Designed a communication protocol between the VR simulator (C++)
+                        and the audio generator (Python) using subscriber-publisher
+                        from Robot Operating System (ROS). The simulator sends drill force, surface dryness,
+                        and drill angle data to the generator as generation conditions.
+                      </li><br>
+                      <li>
+                        Control the virtual drill using Phantom Omni or Geomagic Touch X haptic device.
+                        Haptic feedback such as drill weight, drill force, and drill vibration are perceivable.
+                        Drill force is estimated with the finger-proxy algorithm whereas the vibration is
+                        modelled as a gaussian noise.
+                      </li><br>
+                      <li>
+                        Developed the audio generator based on deep learning using PyTorch library.
+                        (More details under the deep learning section). The audio generator could
+                        generate realistic audio in real time in response to the drilling scenario.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="items">
+                    <h1 id="p1">
+                        Cube Collision Application: A PhysX Demonstration
+                    </h1>
+                    <p>
+                        A simple application to showcase rigid-body dynamics between cubes using
+                        NVIDIA PhysX, a library for physics engine development.
+                        <a href="https://github.com/TzeLun/Cube-Collision-Application" target="_blank">
+                            [GitHub] <i class="material-icons">open_in_new</i>
+                        </a>
+                    </p>
+            
+                    <div class="keywords">
+                      <div>Computer graphics</div>
+                      <div>Rigid-body dynamics</div>
+                      <div>Physics-based animation</div>
+                      <div>C</div>
+                      <div>C++</div>
+                      <div>GLSL shader programming</div>
+                      <div>NVIDIA PhysX</div>
+                      <div>OpenGL</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="video-wrapper">
+                            <iframe
+                                id="video" width="640" height="480"
+                                src="https://drive.google.com/file/d/1VlL12khUqZOjjWXc8sxPtsrgCt0tthS6/preview"
+                                allow="fullscreen"> ****Your Browser Doesn't Support iframe!****
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <ul>
+                      <li>
+                        Developed the graphics using OpenGL and GLSL shader programming.
+                        Includes Phong lighting.
+                      </li><br>
+                      <li>
+                        Defined the cubes and the floor as PhysX actors. Cubes are removed in a FIFO manner
+                        after a certain number of spawns to avoid memory overload.
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <div id="go_top" onclick="bookmark('nav-bar')">TOP</div>
+
+        <footer>&copy 2023 Lok Tze Lun - Portfolio All Rights Reserved.</footer>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                //     go_top.style.display = "block";
+                // } else {
+                //     go_top.style.display = "none";
+                // }
+                let go_top = document.getElementById("go_top");
+                let table = document.getElementById("table-of-contents");
+                let header_bar = document.getElementById("header");
+                if (window.scrollY > (table.offsetTop + table.offsetHeight - header_bar.offsetHeight)) {
+                    go_top.style.display = "block";
+                } else {
+                    go_top.style.display = "none";
+                }
+            }
+
+            function dropdown() {
+                var drop_content = document.getElementById("dropdown-content");
+                var btn = document.getElementById("menu-btn");
+                btn.classList.toggle("btn-select");
+                if (drop_content.classList.contains("show")) {
+                drop_content.classList.remove("show");
+                } else {
+                drop_content.classList.add("show");
+                }
+            }
+
+            function bookmark(id) {
+                let element = document.getElementById(id);
+                let header_bar = document.getElementById("header");
+                window.scrollTo(0, element.offsetTop - header_bar.offsetHeight);
+            }
+        </script>
+    </body>
+</html>
