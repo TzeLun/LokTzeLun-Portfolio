@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="project_style.css" />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Assistant"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Abel"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <title>Portfolio - Lok Tze Lun</title>
+    </head>
+    <body>
+        <header id="header">
+            <img id="logo" src="//home/mylogo.PNG" />
+            <nav id="nav-bar">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/docs/education.html" class="nav-link">Education</a>
+                <a href="/docs/project.html" class="nav-link">Projects</a>
+                <a href="/docs/work.html" class="nav-link">Work</a>
+                <div class="dropdown">
+                    <button id="menu-btn" class="menu-btn" onclick="dropdown()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="/index.html" class="drop-link">Home</a>
+                        <a href="/docs/education.html" class="drop-link">Education</a>
+                        <a href="/docs/project.html" class="drop-link">Projects</a>
+                        <a href="/docs/work.html" class="drop-link">Work</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="back">
+            <a href="/docs/project.html">
+                <i class="material-icons">arrow_back</i> Projects
+            </a>
+        </div>
+
+        <div class="container">
+            <h1 id="title">
+                Algorithms
+            </h1>
+    
+            <div id="table-of-contents">
+                <h2>Contents:</h2>
+                <ol>
+                    <li>
+                        <div onclick="bookmark('p1')">
+                            Quadratic Assignment Problems: A Heuristics and Metaheuristics Approach
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="contents">
+                  <div class="items">
+                    <h1 id="p1">
+                        Quadratic Assignment Problems: A Heuristics and Metaheuristics Approach
+                    </h1>
+
+                    <div class="keywords">
+                        <div>Optimization</div>
+                        <div>Combinatorics</div>
+                        <div>Heuristics/Metaheuristics</div>
+                        <div>C++</div>
+                        <div>Quadratic Assignment Problem</div>
+                        <div>QAPLIB</div>
+                        <div>Local search</div>
+                        <div>Simulated annealing</div>
+                        <div>Genetic algorithm</div>
+                        <div>Tabu search</div>
+                      </div>
+
+                    <p>
+                        Assignment problems are quite common in real world applications. The idea is to assign
+                        a few entities (factory, electronic components etc.) to several positions. Each assignment
+                        incurs an activity cost among entities, called flow; and distance cost (logistics, latency etc.);
+                        and the sum of product of both costs constitutes the total cost. This is known as a
+                        Quadratic Assignment Problem (QAP). Examples of QAP are, but not limited to:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Factory location assignment
+                        </li>
+                        <li>
+                            Hospital layout
+                        </li>
+                        <li>
+                            Airport gate assignment
+                        </li>
+                        <li>
+                            Electrical wiring planning
+                        </li>
+                        <li>
+                            Scheduling
+                        </li>
+                      </ul>
+                    
+                    <p>
+                        QAP is an optimization problem and the goal is to find a permutation giving
+                        the lowest total cost (objective function). In this project, a QAP solver
+                        using heuristics and metaheuristics was developed as a library in C++.
+                        Like every optimization problem, this QAP solver first generate an initial
+                        solution, then iteratively compute the next solution given the heuristics till it reaches a
+                        termination cue. Each choice of heuristics was able to reach global optimum
+                        depending on the difficulty.<br><br>
+                        List of initial solution generator:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Iterative random generator</strong>
+                        </li>
+                        <li>
+                            <strong>Greedy generator</strong>
+                        </li>
+                    </ul>
+
+                    <p>
+                        List of heuristics / metaheuristics:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Local search with dynamic neighborhood operators</strong>
+                        </li>
+                        <li>
+                            <strong>Simulated annealing</strong>
+                        </li>
+                        <li>
+                            <strong>Genetic algorithm</strong>
+                        </li>
+                        <li>
+                            <strong>Tabu search</strong>
+                        </li>
+                    </ul>
+
+                    <p>
+                        The QAP solver tackles problems from the QAPLIB website.<br><br>
+                        Check out the repository of the QAP solver:
+                        <a href="https://github.com/TzeLun/QAPSolver" target="_blank">
+                            [GitHub] <i class="material-icons">open_in_new</i>
+                        </a><br><br>
+                        I made a highly technical report detailing each heuristics, fine-tuning
+                        approach, and analysis of each heuristics (speed and best solution)
+                        given a wide array of problems. Check it out 
+                        <a href="/project/assets/algo/QAP report.pdf" target="_blank">
+                            [here] <i class="material-icons">open_in_new</i>
+                        </a>
+                    </p>
+                    
+                    <div class="gallery">
+                        <img src="/project/assets/algo/p1_1.PNG">
+                    </div>
+                    <p>
+                        Image source - Tournament selection based antlion optimization algorithm
+                        for solving quadratic assignment problem, by Haydar et. al.
+                    </p>
+                  </div>
+            </div>
+        </div>
+
+        <div id="go_top" onclick="bookmark('nav-bar')">TOP</div>
+
+        <footer>&copy 2023 Lok Tze Lun - Portfolio All Rights Reserved.</footer>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                //     go_top.style.display = "block";
+                // } else {
+                //     go_top.style.display = "none";
+                // }
+                let go_top = document.getElementById("go_top");
+                let table = document.getElementById("table-of-contents");
+                let header_bar = document.getElementById("header");
+                if (window.scrollY > (table.offsetTop + table.offsetHeight - header_bar.offsetHeight)) {
+                    go_top.style.display = "block";
+                } else {
+                    go_top.style.display = "none";
+                }
+            }
+
+            function dropdown() {
+                var drop_content = document.getElementById("dropdown-content");
+                var btn = document.getElementById("menu-btn");
+                btn.classList.toggle("btn-select");
+                if (drop_content.classList.contains("show")) {
+                drop_content.classList.remove("show");
+                } else {
+                drop_content.classList.add("show");
+                }
+            }
+
+            function bookmark(id) {
+                let element = document.getElementById(id);
+                let header_bar = document.getElementById("header");
+                window.scrollTo(0, element.offsetTop - header_bar.offsetHeight);
+            }
+        </script>
+    </body>
+</html>

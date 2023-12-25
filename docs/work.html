@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="work.css" />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Assistant"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Abel"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <title>Portfolio - Lok Tze Lun</title>
+    </head>
+    <body>
+        <header id="header">
+            <img id="logo" src="/home/mylogo.PNG" />
+            <nav id="nav-bar">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/docs/education.html" class="nav-link">Education</a>
+                <a href="/docs/project.html" class="nav-link">Projects</a>
+                <a href="/docs/work.html" class="nav-link">Work</a>
+                <div class="dropdown">
+                    <button id="menu-btn" class="menu-btn" onclick="dropdown()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="/index.html" class="drop-link">Home</a>
+                        <a href="/docs/education.html" class="drop-link">Education</a>
+                        <a href="/docs/project.html" class="drop-link">Projects</a>
+                        <a href="/docs/work.html" class="drop-link">Work</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="title">
+          Work Experience
+        </h1>
+        
+        <!-- timeline -->
+        <div class="timeline">
+          <div class="contents">
+            <div class="event-icon"></div>
+            <div class="date">
+                Present
+            </div>
+            <div class="items">
+              <h2>Currently looking for jobs. :)</h2>
+              <br><br><br><br><br>
+            </div>
+          </div>
+          <div class="contents">
+            <div class="event-icon"></div>
+            <div class="date">
+                June 2019 - August 2019
+            </div>
+            <div class="items">
+              <h1>Internship, Branch Project Management</h1>
+              <p>Hong Leong Bank Berhad (HLBB), Malaysia</p>
+              <div class="keywords">
+                <div>Project management</div>
+                <div>Leadership</div>
+                <div>Communication</div>
+                <div>Teamwork</div>
+                <div>Relationship management</div>
+                <div>Negotiation</div>
+              </div>
+              <ul>
+                <li>
+                  Spearheaded two renovation projects in Johor and Sabah with all works completed ahead of schedule. Tasks include understanding client's request,
+                  formulate a project proposal from client's request, liaise with incumbent contractors/vendors to estimate costing,
+                  monitor work progress, and facilitate operations between client and contractors.
+                </li><br>
+                <li>
+                  Prepared documentations, i.e.: standard operating procedures (SOP) on renovation works for future staffs, bill of material for
+                  renovation projects, T&C for vendor e-bidding, and justification of project.
+                </li><br>
+                <li>
+                  Collaborated with several managers in ideation and preparation of a presentation deck on Anti-Bribery
+                  and Corruption (ABC) which was presented to all HLBB employees as education material.
+                </li><br>
+                <li>
+                  Led a team of staffs in preparing quizzes for the company's National Independence Day celebration.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contents">
+            <div class="event-icon"></div>
+            <div class="date">
+                August 2018
+            </div>
+            <div class="items">
+              <h1>Part time</h1>
+              <p>Datmel Technology Sdn. Bhd., Malaysia</p>
+              <div class="keywords">
+                <div>Customer support</div>
+                <div>Persuasion</div>
+              </div>
+              <ul>
+                <li>
+                  Supported customers by explaining the functionality of the new smart parking meter system.
+                </li><br>
+                <li>
+                  Assisted the company in the sales of parking meter RFID card.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of timeline -->
+        
+        <footer>&copy 2023 Lok Tze Lun - Portfolio All Rights Reserved.</footer>
+
+        <script>
+        function dropdown() {
+            var drop_content = document.getElementById("dropdown-content");
+            var btn = document.getElementById("menu-btn");
+            btn.classList.toggle("btn-select");
+            if (drop_content.classList.contains("show")) {
+            drop_content.classList.remove("show");
+            } else {
+            drop_content.classList.add("show");
+            }
+        }
+        </script>
+    </body>
+</html>

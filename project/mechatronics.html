@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="project_style.css" />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Assistant"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Abel"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <title>Portfolio - Lok Tze Lun</title>
+    </head>
+    <body>
+        <header id="header">
+            <img id="logo" src="/home/mylogo.PNG" />
+            <nav id="nav-bar">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/docs/education.html" class="nav-link">Education</a>
+                <a href="/docs/project.html" class="nav-link">Projects</a>
+                <a href="/docs/work.html" class="nav-link">Work</a>
+                <div class="dropdown">
+                    <button id="menu-btn" class="menu-btn" onclick="dropdown()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="/index.html" class="drop-link">Home</a>
+                        <a href="/docs/education.html" class="drop-link">Education</a>
+                        <a href="/docs/project.html" class="drop-link">Projects</a>
+                        <a href="/docs/work.html" class="drop-link">Work</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="back">
+            <a href="/docs/project.html">
+                <i class="material-icons">arrow_back</i> Projects
+            </a>
+        </div>
+
+        <div class="container">
+            <h1 id="title">
+                Mechatronics
+            </h1>
+    
+            <div id="table-of-contents">
+                <h2>Contents:</h2>
+                <ol>
+                    <li>
+                        <div onclick="bookmark('p6')">
+                            Development of Active Front Wheel Steering System for Passenger
+                            Vehicle due to Side Wind Force Disturbance
+                        </div>
+                    </li>
+                    <li>
+                        <div onclick="bookmark('p5')">
+                            Solving a 3-disc Tower of Hanoi with a 4-DOF Robotic Arm
+                            - Graphical Simulation
+                        </div>
+                    </li>
+                    <li>
+                        <div onclick="bookmark('p4')">
+                            A Fully Automated PLC Sorting Station with Freight Unit
+                        </div>
+                    </li>
+                    <li>
+                        <div onclick="bookmark('p3')">
+                            A Pneumatic Pick & Place Station
+                        </div>
+                    </li>
+                    <li>
+                        <div onclick="bookmark('p2')">
+                            An Autonomous Line Following Robot
+                        </div>
+                    </li>
+                    <li>
+                        <div onclick="bookmark('p1')">
+                            A Pneumatic-based Motor
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="contents">
+                <div class="items">
+                    <h1 id="p6">
+                        Development of Active Front Wheel Steering System for Passenger
+                        Vehicle due to Side Wind Force Disturbance
+                    </h1>
+                    <p>
+                        Lateral wind forces displace the vehicle out of its intended trajectory to the
+                        opposite lane, leading to road accident if there is an oncoming vehicle. This
+                        research aims to develop an Active Front Wheel Steering (AFWS) system to stabilize
+                        a 9-DOF passenger vehicle laterally by correcting the steering angle via the yaw rate
+                        (the rate of vehicle turning sideways). All modelling and simulations were conducted
+                        on MATLAB/SIMULINK.
+                        <a href="https://journal.ump.edu.my/ijame/article/view/6613" target="_blank">
+                            [IJAME journal] <i class="material-icons">open_in_new</i>
+                        </a>
+                    </p>
+            
+                    <div class="keywords">
+                      <div>Automotive</div>
+                      <div>Control system</div>
+                      <div>Fuzzy logic</div>
+                      <div>PID</div>
+                      <div>Fuzzy-tuned PID</div>
+                      <div>Vehicle dynamics</div>
+                      <div>MATLAB/SIMULINK</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <img src="/project/assets/m/mp6_1.png">
+                    </div>
+
+                    <ul>
+                      <li>
+                        Modelled the passenger vehicle (2-DOF rack and pinion steering model, Pacejka tire model,
+                        load distribution model, handling model, lateral and longitudinal slip model) with
+                        vehicle dynamics equations.
+                      </li><br>
+                      <li>
+                        Verified the passenger vehicle model with data from CarSim and IPG CarMaker.
+                      </li><br>
+                      <li>
+                        Developed and tuned three control systems: PID, Fuzzy-tuned PID, and Fuzzy logic controllers.
+                        Compared the controllers' performance in stabilizing the vehicle under disturbance.
+                      </li><br>
+                      <li>
+                        Developed a yaw rate observer to estimate the yaw rate of non-linear vehicle model
+                        for non-zero steering inputs using empirical data. This enables disturbance testing
+                        on non-zero steering conditions.
+                      </li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <h1 id="p5">
+                        Solving a 3-disc Tower of Hanoi with a 4-DOF Robotic Arm
+                        - Graphical Simulation
+                    </h1>
+                    <p>
+                        A 4-DOF uArm-inspired robotic arm solving a Tower of Hanoi puzzle. The robot is
+                        modelled with Peter Corke's Robotic Toolbox. The forward kinematics are designed
+                        with D-H parameters. The inverse kinematics are designed with trigonometry. All
+                        visuals are simulated with MATLAB.
+                    </p>
+            
+                    <div class="keywords">
+                      <div>Robotics</div>
+                      <div>D-H parameters</div>
+                      <div>Forward/Inverse kinematics</div>
+                      <div>MATLAB</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="video-wrapper">
+                            <iframe
+                                id="video" width="640" height="480"
+                                src="https://drive.google.com/file/d/1R1XyZamHULwgY0dolSyILFLPwwwQHRyN/preview"
+                                allow="fullscreen"> ****Your Browser Doesn't Support iframe!****
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <h1 id="p4">
+                        A Fully Automated PLC Sorting Station with Freight Unit
+                    </h1>
+                    <p>
+                        A sorting station which rejects unsuccessful peg transfers and load the
+                        successful ones onto an autonomous freight unit via a robotic arm.
+                        This project showcases the beauty of factory automation.
+                    </p>
+            
+                    <div class="keywords">
+                      <div>Arduino</div>
+                      <div>Control system</div>
+                      <div>Robotics</div>
+                      <div>Computer-aided design</div>
+                      <div>Machining/Fabrication</div>
+                      <div>3D printing</div>
+                      <div>Teamwork</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="video-wrapper">
+                            <iframe
+                                id="video" width="640" height="480"
+                                src="https://drive.google.com/file/d/1yk-A_icMQmgczEx4lhbHFYCUyjlwuBWq/preview"
+                                allow="fullscreen"> ****Your Browser Doesn't Support iframe!****
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <ul>
+                      <li>
+                        Designed a 4-DOF robotic arm with SolidWorks CAD and fabricate it with a mix of
+                        machining and 3D printing. The robot moves with servo motors.
+                      </li><br>
+                      <li>
+                        Designed the logic of the sorting station, the locomotion of the
+                        robotic arm, and the freight robot using Arduino programming.
+                      </li><br>
+                      <li>
+                        Developed a line following robot based on infrared sensors as the freight unit.
+                      </li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <h1 id="p3">
+                        A Pneumatic Pick & Place Station
+                    </h1>
+                    <p>
+                        Pick and place a sponge cube onto a cargo robot using pneumatic linear actuators.
+                        The station features three major sectors: a gate to control the
+                        moving/stopping of the cargo robot, the main pick and place unit, and a unit to separate
+                        the sponge cube from the pick and place unit.
+                    </p>
+            
+                    <div class="keywords">
+                      <div>Cartesian Robots</div>
+                      <div>Computer-aided design</div>
+                      <div>Machining/Fabrication</div>
+                      <div>Teamwork</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="video-wrapper">
+                            <iframe
+                                id="video" width="640" height="480"
+                                src="https://drive.google.com/file/d/1H3lRFq-TU7MSTPAMQdFNSPUJJ6XhVc-R/preview"
+                                allow="fullscreen"> ****Your Browser Doesn't Support iframe!****
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <ul>
+                      <li>
+                        Designed the pneumatic linear actuator with SolidWorks CAD software.
+                      </li><br>
+                      <li>
+                        Simulated stress test on the internal piston of the actuator with SolidWorks.
+                      </li><br>
+                      <li>
+                        Prepared detail drawings and bill of materials. All parts are fabricated with
+                        machining (lathing, milling, drilling, bending etc.).
+                      </li><br>
+                      <li>
+                        Designed other auxiliary parts, such as the gate, platform attachment, the sliding
+                        overhead passage, and the cube separator.
+                      </li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <h1 id="p2">
+                        An Autonomous Line Following Robot
+                    </h1>
+                    <p>
+                        A robot that moves on its own along a path using infrared sensors. Equipped with PID control to reduce
+                        the robot's deviation from the path. Programmed completely with Arduino
+                    </p>
+            
+                    <div class="keywords">
+                      <div>Arduino</div>
+                      <div>Control system</div>
+                      <div>Robotics</div>
+                      <div>Teamwork</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="video-wrapper">
+                            <iframe
+                                id="video" width="640" height="480"
+                                src="https://drive.google.com/file/d/1KS0yO3a5VxzLOwp_xLPDyjAMe-F7NcQ_/preview"
+                                allow="fullscreen"> ****Your Browser Doesn't Support iframe!****
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <h1 id="p1">
+                        A Pneumatic-based Motor
+                    </h1>
+                    <p>
+                        Imagine car engine motor, but completely run on air pressure. The motor design is
+                        similar to engine motor with 3 pistons driving the crankshaft. 
+                    </p>
+            
+                    <div class="keywords">
+                      <div>SolidWorks</div>
+                      <div>Computer-aided design</div>
+                      <div>Machining/Fabrication</div>
+                      <div>Teamwork</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="video-wrapper">
+                            <iframe
+                                id="video" width="640" height="480"
+                                src="https://drive.google.com/file/d/1tTgjKgjJl12HK6QxsJ7WDU_uu4fLUgkt/preview"
+                                allow="fullscreen"> ****Your Browser Doesn't Support iframe!****
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="go_top" onclick="bookmark('nav-bar')">TOP</div>
+
+        <footer>&copy 2023 Lok Tze Lun - Portfolio All Rights Reserved.</footer>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                //     go_top.style.display = "block";
+                // } else {
+                //     go_top.style.display = "none";
+                // }
+                let go_top = document.getElementById("go_top");
+                let table = document.getElementById("table-of-contents");
+                let header_bar = document.getElementById("header");
+                if (window.scrollY > (table.offsetTop + table.offsetHeight - header_bar.offsetHeight)) {
+                    go_top.style.display = "block";
+                } else {
+                    go_top.style.display = "none";
+                }
+            }
+
+            function dropdown() {
+                var drop_content = document.getElementById("dropdown-content");
+                var btn = document.getElementById("menu-btn");
+                btn.classList.toggle("btn-select");
+                if (drop_content.classList.contains("show")) {
+                drop_content.classList.remove("show");
+                } else {
+                drop_content.classList.add("show");
+                }
+            }
+
+            function bookmark(id) {
+                let element = document.getElementById(id);
+                let header_bar = document.getElementById("header");
+                window.scrollTo(0, element.offsetTop - header_bar.offsetHeight);
+            }
+        </script>
+    </body>
+</html>
