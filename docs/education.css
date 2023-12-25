@@ -262,35 +262,35 @@
 }
 
 .bg1 {
-  background-image: url(/education/utokyo.jpg);
+  background-image: url(education/utokyo.jpg);
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
 }
 
 .bg2 {
-  background-image: url(/education/unm.jpg);
+  background-image: url(education/unm.jpg);
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
 }
 
 .bg3 {
-  background-image: url(/education/sunway.jpg);
+  background-image: url(education/sunway.jpg);
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
 }
 
 .bg4 {
-  background-image: url(/education/sglong.jpg);
+  background-image: url(education/sglong.jpg);
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
 }
 
 .bg5 {
-  background-image: url(/education/batu11.jpg);
+  background-image: url(education/batu11.jpg);
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
